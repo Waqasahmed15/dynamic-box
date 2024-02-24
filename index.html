@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      var btn = document.createElement("button");
+      btn.innerText = "click me";
+      document.body.appendChild(btn);
+      var setAtt = btn.setAttribute("onclick", "adddabba()");
+
+      function adddabba() {
+        var dabba = document.createElement("div");
+        document.body.appendChild(dabba);
+        dabba.style.border = "2px solid red";
+        dabba.style.width = "100px";
+        dabba.style.height = "100px";
+      }
+    </script>
+  </body>
+</html>
